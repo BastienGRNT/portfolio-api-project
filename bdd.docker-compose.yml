@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: projectBddDocker
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: bastien
+      POSTGRES_PASSWORD:
+      POSTGRES_DB: ProjectBDD
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - pgnet
+
+volumes:
+  pgdata:
+
+networks:
+  pgnet:
+    driver: bridge

@@ -1,6 +1,6 @@
 ﻿using Npgsql;
 
-namespace ApiUpload._Sql;
+namespace ApiProject._Sql;
 
 public class Connection
 {
