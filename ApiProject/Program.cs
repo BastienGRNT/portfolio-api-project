@@ -5,9 +5,6 @@ public class Program
     public static void Main(string[] args)
     {
         DotNetEnv.Env.Load("./config/bdd.env");
-        DotNetEnv.Env.Load("./config/path.env");
-        DotNetEnv.Env.Load("./config/certificat.env");
-        DotNetEnv.Env.Load("./config/url.env");
         
         var builder = WebApplication.CreateBuilder(args);
 
